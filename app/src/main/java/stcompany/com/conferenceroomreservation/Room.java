@@ -16,7 +16,7 @@ public class Room extends Model {
     public String position;
 
     @Column(name = "Date")
-    public Date date;
+    public String date;
 
     public Room()
     {
@@ -31,7 +31,7 @@ public class Room extends Model {
   }
      */
 
-    public Room (String position, Date date)
+    public Room (String position, String date)
     {
         super();
         this.position = position;

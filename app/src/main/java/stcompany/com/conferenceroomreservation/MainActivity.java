@@ -61,7 +61,14 @@ public class MainActivity extends ActionBarActivity {
         ((Button) findViewById(R.id.button)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "テスト", Toast.LENGTH_LONG).show();
+                // 日付、場所　方角　をSQliteへコミット
+                Room r = new Room();
+                r.position = "";
+                r.date = editText.getText().toString();
+                r.save();
+                Toast.makeText(MainActivity.this, "Submmit", Toast.LENGTH_LONG).show();
+                // 保存したデータを出力
+
             }
         });
 
