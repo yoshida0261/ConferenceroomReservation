@@ -15,6 +15,13 @@ import android.widget.Toast;
 import java.sql.Date;
 import java.util.Calendar;
 
+
+/**
+ * TODO: ViewPagerを実装
+ * TODO: 2画面で入力する画面、リスト表示画面を表示
+ *
+ *
+ */
 public class MainActivity extends ActionBarActivity {
 
     private TimePickerDialog.OnTimeSetListener varTimeSetListener;
