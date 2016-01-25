@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.Objects;
 
@@ -25,7 +26,19 @@ public class SamplePageAdapter extends PagerAdapter{
     public Object instantiateItem(ViewGroup container, int position)
     {
         //TextViewの生成
-        return null;
+        TextView textView = new TextView(context);
+        textView.setText("Position :" + position);
+        container.addView(textView);
+
+        return textView;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object)
+    {
+
+        // objectがinstantiateItemの返却値つまりtextView
+        container.removeView((View)object);
     }
 
     @Override
