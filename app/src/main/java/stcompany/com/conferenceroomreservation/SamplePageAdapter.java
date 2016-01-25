@@ -43,7 +43,7 @@ public class SamplePageAdapter extends PagerAdapter{
 
     @Override
     public int getCount() {
-        return 0;
+        return PAGA_COUNT;
     }
 
     @Override
