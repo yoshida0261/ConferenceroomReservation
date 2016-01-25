@@ -48,6 +48,6 @@ public class SamplePageAdapter extends PagerAdapter{
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return false;
+        return view == (TextView)object;
     }
 }
