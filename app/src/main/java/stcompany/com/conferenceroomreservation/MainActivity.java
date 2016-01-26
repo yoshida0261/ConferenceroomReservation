@@ -3,6 +3,7 @@ package stcompany.com.conferenceroomreservation;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.Menu;
@@ -33,6 +34,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_view);
+        ViewPager pager = (ViewPager) findViewById(R.id.Pager);
+        pager.setAdapter(new SamplePageAdapter(this));
+        /*
         setContentView(R.layout.activity_main);
 
         // エディットテキストのインスタンスを取得
@@ -87,7 +92,7 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(t);
             }
         });
-
+*/
 
     }
 
