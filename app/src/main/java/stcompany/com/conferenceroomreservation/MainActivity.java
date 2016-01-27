@@ -21,7 +21,10 @@ import java.util.Calendar;
  * TODO: ViewPagerを実装
  * TODO: 2画面で入力する画面、リスト表示画面を表示
  *
- *
+ * TODO: mixiの写経
+ * TODO: ormaの利用
+ * TODO: mvvmの適用
+ * TODO: DIコンテナを使ったテスト実装
  */
 public class MainActivity extends ActionBarActivity {
 
