@@ -1,5 +1,7 @@
 package stcompany.com.conferenceroomreservation;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,7 +41,15 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
         ViewPager pager = (ViewPager) findViewById(R.id.Pager);
-        pager.setAdapter(new SamplePageAdapter(this));
+
+
+        FragmentManager fm = getSupportFragmentManager();
+        SampleFragmentPageAdapter sampleFragmentPagerAdapter = new SampleFragmentPageAdapter(fm);
+
+
+        pager.setAdapter(sampleFragmentPagerAdapter);
+
+        //pager.setAdapter(new SamplePageAdapter(this));
         /*
         setContentView(R.layout.activity_main);
 
