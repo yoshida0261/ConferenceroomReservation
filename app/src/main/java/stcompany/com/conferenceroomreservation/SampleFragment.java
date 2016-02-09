@@ -29,6 +29,7 @@ public class SampleFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
+    //からのコンストラクタ
     public SampleFragment() {
         // Required empty public constructor
     }
